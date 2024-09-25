@@ -138,4 +138,4 @@ const handleEventCreate=async (e)=>{
   )
 }
 
-export default CreateEventPage;np
+export default CreateEventPage;
