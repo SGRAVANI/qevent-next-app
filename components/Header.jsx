@@ -116,6 +116,7 @@ const Header = () => {
             session?<div > <Image src={`${getSession.data.user.image}`} 
             height={23} // Aspect ratio control
             width={23} // Aspect ratio control
+            alt="profile-picture"
             className="h-[23px] w-[23px] mx-auto rounded-full object-cover" />
            
             <p className="text-xs">{getSession.data.user.name}</p>
