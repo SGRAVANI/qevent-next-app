@@ -1,5 +1,10 @@
-import Events from "./Event"; // Import the client-side Events component
+import React, { Suspense } from 'react';
+import Events from './Event'; // Import the Events component
 
 export default function Page() {
-  return <Events />; // Render the client-side component
+  return (
+    <Suspense fallback={<div>Loading events...</div>}>
+      <Events /> {/* Render Events inside the Suspense */}
+    </Suspense>
+  );
 }

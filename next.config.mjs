@@ -3,9 +3,15 @@
 
 // export default nextConfig;
 const nextConfig = {
-    images: {
-      domains: ['lh3.googleusercontent.com'], // Add domains here
-    },
-  };
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+    ],
+  },
+};
+
   
   export default nextConfig; // Use export default
